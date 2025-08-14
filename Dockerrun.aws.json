@@ -1,0 +1,23 @@
+{
+  "AWSEBDockerrunVersion": 2,
+  "containerDefinitions": [
+    {
+      "name": "backend",
+      "image": "027653366584.dkr.ecr.ca-central-1.amazonaws.com/diabetes-predictor:backend",
+      "essential": true,
+      "memory": 512,
+      "portMappings": [
+        { "containerPort": 8000, "hostPort": 8000 }
+      ]
+    },
+    {
+      "name": "frontend",
+      "image": "027653366584.dkr.ecr.ca-central-1.amazonaws.com/diabetes-predictor:frontend",
+      "essential": true,
+      "memory": 512,
+      "portMappings": [
+        { "containerPort": 3000, "hostPort": 3000 }
+      ]
+    }
+  ]
+}
