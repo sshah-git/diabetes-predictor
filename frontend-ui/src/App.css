@@ -1,0 +1,55 @@
+
+body{
+background-color: #edd9d9;
+margin-right: 100px;
+margin-left: 100px;
+}
+
+.App {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background: white; /* makes it stand out */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: Arial, sans-serif;
+  gap: 100px;
+  
+}
+.FormContainer {
+  max-width: 400px;    /* max width to keep form reasonable */
+  flex:1;
+}
+.ChartContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center chart and text */
+}
+.charts{
+ margin-top: 100px;
+ margin-bottom: 50px;            
+}
+
+button{
+  background-color: #b3909f;
+  color: white;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+}
+button:hover {
+  background-color: #edd9d9;
+ 
+}
+input {
+  width: 95%;
+  padding: 8px;
+  margin: 5px 0 15px;
+}
+
+
